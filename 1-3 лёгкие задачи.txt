@@ -1,0 +1,18 @@
+#coding: utf-8
+# Задача №1
+x = int(input("Введите значение переменной x = "))
+y= 7 * x + 5
+print("значение функции y =",y)
+
+#coding: utf-8
+# Задача №2
+v = int(input("Введите m"))
+c = m*4
+print (c)
+
+#coding: utf-8
+# Задача №3
+p = 3.14
+r = int(input("Введите r ="))
+e = (p * 2)*r
+print (e)
