@@ -1,0 +1,6 @@
+#coding: utf-8 
++ w = 3.14
++ d = int(input("Введите d"))
++ R = d/2
++ u= i*R**R 
++ print (u)
