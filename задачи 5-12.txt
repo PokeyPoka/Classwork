@@ -1,0 +1,64 @@
+#coding: utf-8
+#Задача №5
+a = int(input("Введите a = "))
+b = int(input("Введите b = "))
+c**c = a**a + b**b
+print (c)
+
+#coding: utf-8
+#Задача №6
+a = int(input("Введите a ="))
+b = int(input("Введите b ="))
+c = a**2 + b**2
+P = a + b + c
+print(P)
+
+#coding: utf-8
+#Задача №7
+a = int(input("Введите a ="))
+b = int(input("Введите b ="))
+P = 2 * (a + b)
+c = (a**2 + b**2)
+print (P,c)
+
+#coding: utf-8
+#Задача №8
+r = int(input("Введите r ="))
+R = int(input("Введите R ="))
+p = 3.14
+S = p*(R+r)**2
+print (S)
+
+#coding: utf-8
+#Задача №9
+a = int(input("Введите a ="))
+S = 6*a**2
+V = a**3
+print (S,V)
+
+#coding: utf-8
+#Задача №10
+a = int(input("Введите a ="))
+b = int(input("Введите b ="))
+h = int(input("Введите h ="))
+P = a + b + 2 * h
+print (p)
+
+#coding: utf-8
+#Задача №11
+m = int(input("Введите m ="))
+V = int(input("Введите V ="))
+p=m/v
+print (p)
+ 
+#coding: utf-8
+#Задача №12
+a = int(input("Введите a ="))
+b = int(input("Введите b ="))
+сумма = a+b
+разность = a-b
+произведение = a*b
+деление = a/b
+print (сумма,разность,произведение,деление)
+
+
