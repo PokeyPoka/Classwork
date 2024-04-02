@@ -1,0 +1,134 @@
+#coding utf-8
+#Задача 32
+import random
+
+
+M = random.randint(2, 5)
+N = random.randint(2, 5)
+
+
+matrix = [[random.randint(1, 10) for j in range(N)] for i in range(M)]
+print("Исходная матрица:")
+for row in matrix:
+    print(row)
+
+
+min_value = min(min(row) for row in matrix)
+max_value = max(max(row) for row in matrix)
+
+
+min_index = [(i, row.index(min_value)) for i, row in enumerate(matrix) if min_value in row][0]
+max_index = [(i, row.index(max_value)) for i, row in enumerate(matrix) if max_value in row][0]
+
+
+matrix[min_index[0]][min_index[1]], matrix[max_index[0]][max_index[1]] = max_value, min_value
+
+print("\nМатрица после замены минимального и максимального элементов:")
+for row in matrix:
+    print(row)
+
+
+#coding utf-8
+#Задача 33
+import random
+
+
+M = random.randint(2, 5)
+N = random.randint(2, 5)
+
+
+matrix = [[random.randint(1, 10) for j in range(N)] for i in range(M)]
+
+
+print("Исходная матрица:")
+for row in matrix:
+    print(row)
+
+
+column_products = [1] * N  # Инициализируем массив произведений единицами
+
+
+for j in range(N):
+    for i in range(M):
+        column_products[j] *= matrix[i][j]
+
+
+print("\nОдномерный массив с произведениями элементов каждого столбца:")
+print(column_products)
+#coding utf-8
+#Задача 34
+import random
+
+
+M = random.randint(2, 5)
+N = random.randint(2, 5)
+
+
+matrix = [[random.randint(-10, 10) for j in range(N)] for i in range(M)]
+
+
+print("Исходная матрица:")
+for row in matrix:
+    print(row)
+
+
+negatives_count = []
+
+
+for row in matrix:
+    negative_count = sum(1 for element in row if element < 0)
+    negatives_count.append(negative_count)
+
+
+print("\nОдномерный массив с количеством отрицательных элементов каждой строки:")
+print(negatives_count)
+#coding utf-8
+#Задача 35
+import random
+
+matrix = [[random.randint(-10, 10) for j in range(4)] for i in range(7)]
+
+#
+print("Исходная матрица:")
+for row in matrix:
+    print(row)
+
+
+positive_sums = []
+
+# 
+for row in matrix:
+    positive_sum = sum(element for element in row if element > 0)
+    positive_sums.append(positive_sum)
+
+
+print("\nОдномерный массив с суммами положительных элементов каждой строки:")
+print(positive_sums)
+#coding utf-8
+#Задача 36
+import random
+
+
+M = random.randint(2, 5)
+N = random.randint(2, 5)
+
+
+matrix_A = [[random.randint(1, 10) for j in range(N)] for i in range(M)]
+
+
+print("Исходная матрица A:")
+for row in matrix_A:
+    print(row)
+
+
+avg_column = []
+
+
+for j in range(N):
+    column_sum = sum(matrix_A[i][j] for i in range(M))
+    avg_column.append(column_sum / M)
+
+
+print("\nОдномерный массив с средними арифметическими каждого столбца:")
+print(avg_column)
+
