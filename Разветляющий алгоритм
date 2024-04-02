@@ -1,0 +1,146 @@
+#coding utf- 8
+#Задача 1
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+
+max_value = max(num1, num2)
+min_value = min(num1, num2)
+
+print(f"Максимальное значение: {max_value}")
+print(f"Минимальное значение: {min_value}")
+#coding utf-8
+#Задача 2
+import math
+
+side = float(input("Введите длину стороны квадрата: "))
+radius = float(input("Введите радиус круга: "))
+
+if side >= 2 * radius:
+    print("Круг впишется в квадрат")
+else:
+    print("Круг не впишется в квадрат")
+#coding utf-8
+#Задача 4
+import math
+
+def square_in_circle(side, radius):
+    diagonal = side * math.sqrt(2)  
+    if diagonal <= 2 * radius:  
+        return True
+    else:
+        return False
+
+side = 4
+radius = 3
+if square_in_circle(side, radius):
+    print("Квадрат впишется в круг")
+else:
+    print("Квадрат не впишется в круг")
+#coding utf-8
+#Задача 5
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+
+if num1 > num2:
+    print(f"Большее число: {num1}")
+elif num2 > num1:
+    print(f"Большее число: {num2}")
+else:
+    print("Числа равны")
+#coding utf-8
+#Задача 7
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+
+if num1 < num2:
+    print(f"Меньшее число: {num1}")
+elif num2 < num1:
+    print(f"Меньшее число: {num2}")
+else:
+    print("Числа равны")
+#coding utf-8 
+#Задача 8
+def compare_distance(kilometers, feet):
+    meters_feet = feet * 0.3048  
+    if kilometers > meters_feet / 1000:
+        return "Расстояние в километрах больше"
+    elif meters_feet / 1000 > kilometers:
+        return "Расстояние в футах больше"
+    else:
+        return "Расстояния равны"
+
+kilometers = 5
+feet = 10000
+print(compare_distance(kilometers, feet))
+#coding utf-8
+#Задача 10
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+
+if num2 != 0:
+    quotient = num1 / num2
+    print(f"Частное чисел: {quotient}")
+else:
+    print("Деление на ноль невозможно")
+#coding utf-8
+#Задача 11
+def compare_speed(km_per_hour, m_per_second):
+    km_per_second = km_per_hour / 3600  
+    if km_per_second > m_per_second:
+        return "Скорость в км/ч больше"
+    elif m_per_second > km_per_second:
+        return "Скорость в м/c больше"
+    else:
+        return "Скорости равны"
+
+km_per_hour = 60
+m_per_second = 20
+print(compare_speed(km_per_hour, m_per_second))
+#coding utf-8
+#Задача 12
+import math
+
+def compare_area(radius, side):
+    area_circle = math.pi * radius**2
+    area_square = side**2
+    if area_circle > area_square:
+        return "Площадь круга больше"
+    elif area_square > area_circle:
+        return "Площадь квадрата больше"
+    else:
+        return "Площади равны"
+
+radius = 5
+side = 8
+print(compare_area(radius, side))
+#coding utf-8
+#Задача 14
+ef compare_length(mm, inches):
+    mm_inches = inches * 25.4 
+    if mm > mm_inches:
+        return "Значение в миллиметрах больше"
+    elif mm_inches > mm:
+        return "Значение в дюймах больше"
+    else:
+        return "Значения равны"
+
+mm = 100
+inches = 4
+print(compare_length(mm, inches))
+#coding utf-8
+#Задача 15
+def compare_density(mass1, volume1, mass2, volume2):
+    density1 = mass1 / volume1
+    density2 = mass2 / volume2
+    if density1 > density2:
+        return "Плотность первого тела больше"
+    elif density2 > density1:
+        return "Плотность второго тела больше"
+    else:
+        return "Плотности равны"
+
+mass1 = 10
+volume1 = 5
+mass2 = 8
+volume2 = 4
+print(compare_density(mass1, volume1, mass2, volume2))
